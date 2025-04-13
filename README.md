@@ -68,18 +68,3 @@ With this richer dataset, the model achieved significantly better generalization
 Plots were generated using `matplotlib` to visualize training progress and overfitting. Both loss and accuracy improved steadily across all 6000 steps.
 
 ---
-
-## 🚀 Next Steps
-
-- Train longer (10k+ steps) with learning rate decay
-- Add text generation using `model.generate()`
-- Fine-tune on specific genres or artists (e.g., rap-only or R&B)
-- Save model checkpoints and host demo via Gradio
-
----
-
-## 💾 Usage
-
-To train:
-```bash
-python train.py
