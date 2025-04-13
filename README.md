@@ -1,6 +1,8 @@
 # Reproducing a GPT-Like Model on Lyrics Data
 
-This project implements a character-level Transformer-based language model inspired by GPT, trained from scratch using PyTorch. The goal was to explore training dynamics, overfitting, and model generalization when applied to real-world text data — in this case, lyrics.
+This project implements a character-level Transformer-based language model inspired by GPT, trained from scratch using PyTorch. The primary goal was to gain a deeper understanding of the **foundational architecture behind GPT models (Transformers)** by building and training one end-to-end.
+
+Training was conducted on a **Lambda Labs A10 GPU (24 GB)** to ensure fast iteration, efficient experimentation, and full reproducibility of model behavior and training curves.
 
 ---
 
@@ -9,7 +11,8 @@ This project implements a character-level Transformer-based language model inspi
 - **Model Type:** GPT-style Transformer (char-level)
 - **Framework:** PyTorch
 - **Architecture:** 6 layers, 6 heads, 384-dim embeddings (~10.80M parameters)
-- **Goal:** Learn the structure and style of music lyrics through next-character prediction
+- **Objective:** Learn the structure and style of music lyrics through next-character prediction
+- **Platform:** Lambda Labs A10 GPU instance (California region)
 
 ---
 
@@ -66,5 +69,18 @@ With this richer dataset, the model achieved significantly better generalization
 ## 📊 Loss & Accuracy Curves
 
 Plots were generated using `matplotlib` to visualize training progress and overfitting. Both loss and accuracy improved steadily across all 6000 steps.
+
+---
+
+## 🚀 Summary
+
+This project demonstrates a full-stack, from-scratch implementation of a GPT-style model, covering:
+- Architecture design
+- Data processing
+- Overfitting mitigation
+- Loss/accuracy tracking
+- Infrastructure and scaling on GPU
+
+It also highlights how dataset choice plays a critical role in generalization quality and model performance.
 
 ---
